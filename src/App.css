@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  object-fit: cover;
+  font-family: Lato;
+}
+
+.zed{
+  z-index: 99 !important;
+}
+
+.App{
+  background: #010101;
+  background-image: url('../src/asset/blackbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.dots{
+  background-image: url('https://multi-swiftcoin.web.app/assets/features-illustration-02.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  
+}
+
+.banner{
+  background: url('./asset/line.ad93247a.png');
+}
+
+.specCard{
+  background-image: linear-gradient(to bottom, #6969693b 0%, #15153b0a  60%);
+  /* backdrop-filter: blur(7px) !important; */
+  cursor: pointer;
+  transition: 3s ease-in-out;
+}
+
+.specCard:hover{
+  /* background-image: linear-gradient(to left, #ff00cc67 0%, #333399  51%, #ff00ccd0  100%); */
+
+  background-image: linear-gradient(to bottom, #aaa 0%, #154860  90%);
+
+  /* background-image: linear-gradient(to left, #2e013a 0%, #224a64  51%, #2e013a  100%); */
+}
+
+.grad{
+  background-image: linear-gradient(to bottom, #aaa 0%, #154860  90%);
+}
+
+
+.btn-grad {
+  /* background-image: linear-gradient(to left, #ff00cc67 0%, #333399  51%, #ff00ccd0  100%); */
+  background-image: linear-gradient(to left, #666 0%, #154860  90%, #072538  100%);
+  /* background-image: linear-gradient(to left, #e6bfde67 0%, #160068  51%, #4f29f7  100%); */
+  
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 20px #5a5a5a; */
+  border: none;
+}
+
+.btn-grad:hover {
+  background-position: top; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.textGrad{
+    background: -webkit-linear-gradient(#ffffff, #86b3d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+
+
+
